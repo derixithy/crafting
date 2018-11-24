@@ -67,11 +67,6 @@ if minetest.global_exists("sfinv") then
 	check_for_changes()
 end
 
-minetest.register_node("crafting:work_bench", {
-	description = "Work Bench",
-	groups = { snappy = 1 },
-	on_rightclick = crafting.make_on_rightclick("inv", 2, { x = 8, y = 3 }),
-})
 
 crafting.create_async_station("crafting:furnace", "furnace", 1, {
 	description = "Furnace",
